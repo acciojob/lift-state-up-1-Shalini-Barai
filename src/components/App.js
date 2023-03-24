@@ -1,6 +1,7 @@
 
 import React from "react";
 import './../styles/App.css';
+import Parent from "./Parent";
 
 const App = () => {
   
@@ -16,7 +17,7 @@ const App = () => {
       <div className='child'>
       <h2>Child Component</h2>
       <button onClick={handleClick}>Show Modal</button>
-      {show && <div><h1>Modal Content</h1><h3>This is modal content</h3></div>}
+      {show && <Parent/>}
       </div>
     </div>
   )
